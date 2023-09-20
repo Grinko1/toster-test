@@ -1,0 +1,239 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  
+}
+.mobile {
+  width: 390px;
+  margin: auto;
+  color: rgba(44, 43, 49, 1);
+  background-color: #f0f0f0;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* ad */
+.promotion {
+  height: 33px;
+  background-color: rgba(241, 157, 47, 1);
+  font-size: 13px;
+}
+
+/* header */
+
+.header {
+  background-color: rgba(255, 209, 172, 1);
+  height: 92px;
+  padding: 17px;
+  box-sizing: border-box;
+}
+.header-logo__img {
+  width: 218px;
+  height: 54px;
+}
+
+
+
+/* banner */
+.banner {
+  background: url('./assets/1.png') center;
+  background-size: contain;
+  height: 281px;
+}
+.banner-stickers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  position: relative;
+  bottom: -207px;
+}
+.sticker {
+  width: 103px;
+  height: 58px;
+  border-radius: 7px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.banner-timer {
+  background-color: rgba(241, 157, 47, 1);
+  font-weight: 700;
+  flex-direction: column;
+}
+.banner-timer__text {
+  font-size: 11px;
+  text-align: center;
+}
+.timer {
+  font-size: 21px;
+}
+
+.banner-discount {
+  background-color: rgba(55, 217, 151, 1);
+  flex-direction: column;
+  font-weight: 700;
+}
+.discount-oldprice {
+  font-size: 18px;
+  position: relative;
+}
+.discount-oldprice::after {
+  content: '';
+  width: 103%;
+  position: absolute;
+  border: 2px solid rgba(226, 117, 0, 1);
+  top: 7px;
+  left: -3px;
+}
+.discount-newprice {
+  font-size: 21px;
+}
+/* banner end */
+
+/* product card */
+
+.card {
+  width: 358px;
+  margin: 10px auto;
+}
+.product-card {
+}
+.product-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 400;
+}
+.product-header__exelent {
+}
+.product-header__brand {
+  height: 17px;
+}
+
+.product-header__advantage {
+  color: rgba(55, 217, 151, 1);
+}
+.product-card__title h3 {
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+/* product-slider */
+.product-card__slider {
+}
+.product-img {
+}
+.product-main-img {
+  height: 232px;
+}
+.product-rest-imgs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.product-small-img {
+  width: 80px;
+  height: 66px;
+  object-fit: scale-down;
+  cursor: pointer;
+}
+@keyframes fadeOutIn {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#mainImage {
+  animation: fadeOutIn 0.5s ease;
+  max-width: 100%;
+}
+
+/* product-slider */
+
+/* product-info */
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.product-info__delivery {
+}
+.product-info__delivery b {
+  margin-right: 5px;
+}
+.product-info__rating {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.product-info__rating .rating-item {
+  width: 17px;
+}
+.product-info__rating .rating-grade {
+  margin-left: 7px;
+}
+
+/* end product info */
+
+/* product selects */
+.product-choice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+.product-choice .product-choise__select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.product-choice .product-choise__select span {
+  font-size: 10px;
+  margin-bottom: 3px;
+}
+.product-choice .product-choise__select select {
+  width: 170px;
+  font-size: 21px;
+  text-align: center;
+  border: none;
+  padding: 10px;
+  border-radius: 15px;
+  appearance: none;
+  -webkit-appearance: none;
+  background: url('./assets/arrow.png') no-repeat 140px center;
+  background-size: 17px 10px;
+  cursor: pointer;
+  background-color: #fff;
+}
+/* end product selects */
+
+/* button */
+.big-btn {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(55, 217, 151, 1);
+  color: rgba(255, 255, 255, 1);
+  border: none;
+  text-transform: uppercase;
+  font-size: 30px;
+  border-radius: 15px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+.big-btn  a{
+  text-decoration: none;
+  color: inherit;
+}
